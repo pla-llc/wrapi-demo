@@ -18,4 +18,11 @@ The frontend integration may require more code depending on your solution. Wrapi
 - [ShadCN](https://ui.shadcn.com) (UI Library)
 
 # Structure
-The [frontend folder](./frontend) contains the entire web facing application built with NextJS. This part handles the creation of API keys, linking users, and request tracking.
+The [frontend folder](./frontend) contains the entire web facing application built with NextJS. This part handles the creation of API keys, linking users, and request tracking. Within the frontend, the user is able to:
+
+1. Create an account (authorization)
+2. Create API keys
+3. Purchase API credits
+4. View usage analytics for their created API keys
+
+The [backend folder](./backend) contains your API. From there, requests are tracked, billing is applied, and anlytics are updated.
