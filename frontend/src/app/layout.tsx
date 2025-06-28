@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Toaster } from "sonner";
@@ -20,8 +21,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} antialiased`}>
+			<body
+				className={`${geistSans.variable} antialiased relative overflow-x-hidden`}
+			>
 				<Toaster richColors />
+				<Header />
 				{children}
 			</body>
 		</html>
