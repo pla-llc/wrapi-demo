@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.14.4",
-    "@wrapi.dev/sdk": "^1.0.7",
+    "@wrapi.dev/sdk": "^1.0.12",
     "dotenv": "^17.0.0",
     "hono": "^4.8.3"
   },
