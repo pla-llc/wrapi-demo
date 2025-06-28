@@ -16,6 +16,9 @@ export default async function Home() {
 					<Link href="/api-keys">
 						<Button>API Keys</Button>
 					</Link>
+					<Link href="/usage">
+						<Button>Usage</Button>
+					</Link>
 					<Link href="/billing">
 						<Button>Billing</Button>
 					</Link>
