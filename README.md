@@ -16,3 +16,6 @@ The frontend integration may require more code depending on your solution. Wrapi
 - [Better Auth](https://www.better-auth.com) (Authentication)
 - [Prisma](https://prisma.io) (Database)
 - [ShadCN](https://ui.shadcn.com) (UI Library)
+
+# Structure
+The [frontend folder](./frontend) contains the entire web facing application built with NextJS. This part handles the creation of API keys, linking users, and request tracking.
