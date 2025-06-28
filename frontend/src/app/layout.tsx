@@ -1,29 +1,29 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Wrapi Demo",
-  description: "An example project that uses the Wrapi API",
+	title: "Wrapi Demo",
+	description: "An example project that uses the Wrapi API",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={`${geistSans.variable} antialiased`}>
+				<Toaster richColors />
+				{children}
+			</body>
+		</html>
+	);
 }
