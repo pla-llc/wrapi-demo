@@ -9,7 +9,6 @@ const app = new Hono();
 const wrapi = new Wrapi({
 	apiId: process.env.WRAPI_API_ID!,
 	apiKey: process.env.WRAPI_API_KEY!,
-	apiUrl: "http://localhost:3001/api/v1",
 });
 
 const ROUTE_COSTS: Record<string, number> = {
